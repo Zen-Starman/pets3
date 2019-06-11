@@ -11,6 +11,9 @@
 
 <form action="#" method="post">
     <h3>Animal</h3>
+    <check if="isset(@errors['animal'])">
+        <p>{{@errors['animal']}}</p>
+    </check>
     <input type="text" value="Pig" name="animal">
     <input type="submit" value="Next">
 </form>
